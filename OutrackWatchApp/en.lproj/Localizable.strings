@@ -1,0 +1,60 @@
+/* 
+  Localizable.strings
+  Outrack
+
+  Created by Valentin Mont on 03/09/2023.
+  
+*/
+
+// General
+"error" = "Error";
+"yes" = "Yes";
+"no" = "No";
+"pause" = "Pause";
+
+// Menu
+"activities" = "Workouts";
+
+// Controls
+"start" = "Start";
+"pause" = "Pause";
+"resume" = "Resume";
+"end" = "End";
+"next" = "Next";
+
+// Sports
+"bike" = "Bike";
+"run" = "Run";
+"fitness" = "Fitness";
+
+// Result
+"result" = "Results";
+"done" = "Done";
+
+// Login
+"email" = "Email";
+"password" = "Password";
+"signin" = "Sign in";
+"loginErrorText" = "An error occurred while connecting. Please try again.";
+
+// Account
+"account" = "Account";
+"signout" = "Sign Out";
+
+// Init warning
+"initWarningTitle" = "Warning";
+"initWarningText" = "To fully enjoy all the features of our watchOS application, please download and use the corresponding iOS app.";
+
+// Activity
+"postActivityError" = "An error occurred during saving. Would you like to try again?\n\n If you click 'no', your data will be lost.";
+
+// Training
+"training" = "Trainings";
+"trainingErrorText" = "An error occurred while retrieving your trainings.";
+"emptyTraining" = "You have no training scheduled for today.";
+
+// Goals
+"warmup" = "Warmup";
+"stretching" = "Stretching";
+"rest" = "Rest";
+"exercise" = "Exercise";

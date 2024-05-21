@@ -1,0 +1,9 @@
+name: push-commit-workflow
+on: push
+
+jobs:
+  lint:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: fastlane lint
