@@ -1,0 +1,60 @@
+/* 
+  Localizable.strings
+  Outrack
+
+  Created by Valentin Mont on 03/09/2023.
+  
+*/
+
+// General
+"error" = "Erreur";
+"yes" = "Oui";
+"no" = "Non";
+"pause" = "Pause";
+
+// Menu
+"activities" = "Activités";
+
+// Controls
+"start" = "Démarrer";
+"pause" = "Pause";
+"resume" = "Continuer";
+"end" = "Fin";
+"next" = "Suivant";
+
+// Sports
+"bike" = "Vélo";
+"run" = "Course";
+"fitness" = "Musculation";
+
+// Result
+"result" = "Resultats";
+"done" = "Terminer";
+
+// Login
+"email" = "Adresse mail";
+"password" = "Mot de passe";
+"signin" = "Se connecter";
+"loginErrorText" = "Une erreur survenue lors de la connexion. Veuillez réessayer.";
+
+// Account
+"account" = "Compte";
+"signout" = "Se déconnecter";
+
+// Init warning
+"initWarningTitle" = "Attention";
+"initWarningText" = "Pour profiter pleinement de toutes les fonctionnalités de notre application watchOS, veuillez télécharger et utiliser notre app iOS.";
+
+// Activity
+"postActivityError" = "Une erreur est survenue lors de la sauvegarde. Souhaitez-vous réessayer ?\n\n Si vous cliquez sur 'non' vos données seront perdues.";
+
+// Training
+"training" = "Séances";
+"trainingErrorText" = "Une erreur est survenue lors de la récupération de vos séances.";
+"emptyTraining" = "Vous n'avez aucune séance programmée pour aujourd'hui.";
+
+// Goals
+"warmup" = "Echauffement";
+"stretching" = "Etirement";
+"rest" = "Repos";
+"exercise" = "Exercice";

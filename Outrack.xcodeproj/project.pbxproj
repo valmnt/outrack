@@ -1,0 +1,948 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F7D991767419733FAEC0CD4 /* libPods-OutrackWatchApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D22B8CABF80233003A499110 /* libPods-OutrackWatchApp.a */; };
+		C90591782AA870E300AB9827 /* FallingAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90591742AA870E300AB9827 /* FallingAPICaller.swift */; };
+		C90591792AA870E300AB9827 /* SucceedingAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90591752AA870E300AB9827 /* SucceedingAPICaller.swift */; };
+		C905917A2AA870E300AB9827 /* FakeURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90591762AA870E300AB9827 /* FakeURLSession.swift */; };
+		C905917B2AA870E300AB9827 /* APICallerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90591772AA870E300AB9827 /* APICallerTests.swift */; };
+		C92B81062AA4B83600059C24 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B81052AA4B83600059C24 /* R.generated.swift */; };
+		C93195052AAB537200FB2F2C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93195042AAB537200FB2F2C /* String+Extension.swift */; };
+		C931DD0C2A311BE400D08384 /* SportListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931DD052A311BE400D08384 /* SportListView.swift */; };
+		C931DD0D2A311BE400D08384 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C931DD062A311BE400D08384 /* Assets.xcassets */; };
+		C931DD0E2A311BE400D08384 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C931DD0A2A311BE400D08384 /* Preview Assets.xcassets */; };
+		C931DD0F2A311BE400D08384 /* OutrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931DD0B2A311BE400D08384 /* OutrackApp.swift */; };
+		C94ECBDC2AA784FA001D4B11 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94ECBDB2AA784FA001D4B11 /* LoginView.swift */; };
+		C94ECBDE2AA78500001D4B11 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94ECBDD2AA78500001D4B11 /* LoginViewModel.swift */; };
+		C94ECC222AA78B3F001D4B11 /* HTTPGetTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94ECC132AA78B3F001D4B11 /* HTTPGetTask.swift */; };
+		C94ECC232AA78B3F001D4B11 /* HTTPPostTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94ECC142AA78B3F001D4B11 /* HTTPPostTask.swift */; };
+		C94ECC242AA78B3F001D4B11 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94ECC152AA78B3F001D4B11 /* HTTPTask.swift */; };
+		C94ECC252AA78B3F001D4B11 /* APICallerErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94ECC172AA78B3F001D4B11 /* APICallerErrors.swift */; };
+		C94ECC262AA78B3F001D4B11 /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94ECC182AA78B3F001D4B11 /* HTTPMethods.swift */; };
+		C94ECC272AA78B3F001D4B11 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94ECC192AA78B3F001D4B11 /* States.swift */; };
+		C94ECC282AA78B3F001D4B11 /* RESTErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94ECC1A2AA78B3F001D4B11 /* RESTErrors.swift */; };
+		C94ECC292AA78B3F001D4B11 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94ECC1C2AA78B3F001D4B11 /* ServiceProtocol.swift */; };
+		C94ECC2A2AA78B3F001D4B11 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94ECC1D2AA78B3F001D4B11 /* URLSessionProtocol.swift */; };
+		C94ECC2B2AA78B3F001D4B11 /* HTTPProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94ECC1E2AA78B3F001D4B11 /* HTTPProtocol.swift */; };
+		C94ECC2C2AA78B3F001D4B11 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94ECC202AA78B3F001D4B11 /* APICaller.swift */; };
+		C94ECC2D2AA78B3F001D4B11 /* RequestGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94ECC212AA78B3F001D4B11 /* RequestGenerator.swift */; };
+		C94ECC342AA78C55001D4B11 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94ECC332AA78C55001D4B11 /* LoginService.swift */; };
+		C94ECC372AA78E74001D4B11 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94ECC362AA78E74001D4B11 /* NetworkConstants.swift */; };
+		C956DCF62AA4AD650089DEEE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C956DCF82AA4AD650089DEEE /* Localizable.strings */; };
+		C9578C7D2AB04693001EAB8C /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9578C7C2AB04693001EAB8C /* TrainingView.swift */; };
+		C9578C802AB047F6001EAB8C /* TrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9578C7F2AB047F6001EAB8C /* TrainingViewModel.swift */; };
+		C9578C822AB04DAB001EAB8C /* GETTrainingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9578C812AB04DAB001EAB8C /* GETTrainingsService.swift */; };
+		C9578C852AB04EE0001EAB8C /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9578C842AB04EE0001EAB8C /* Training.swift */; };
+		C963748E2AA1F815005895E6 /* HKStatistics+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C963748D2AA1F815005895E6 /* HKStatistics+Extension.swift */; };
+		C96374902AA216DE005895E6 /* TimeInterval+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C963748F2AA216DE005895E6 /* TimeInterval+Extension.swift */; };
+		C96568832AAA5ACD004B3E36 /* POSTActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96568822AAA5ACD004B3E36 /* POSTActivityService.swift */; };
+		C96568852AAA64F1004B3E36 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96568842AAA64F1004B3E36 /* UserDefaults+Extension.swift */; };
+		C968ECB82AA9B581007E9EDE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C968ECB72AA9B581007E9EDE /* MainView.swift */; };
+		C968ECBB2AA9B5B2007E9EDE /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C968ECBA2AA9B5B2007E9EDE /* AccountView.swift */; };
+		C9BCCA3D2A9D37CD002D77E5 /* HKWorkoutActivityType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BCCA3C2A9D37CD002D77E5 /* HKWorkoutActivityType+Extension.swift */; };
+		C9BCCA3F2A9D3801002D77E5 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BCCA3E2A9D3801002D77E5 /* ActivityView.swift */; };
+		C9BCCA422A9D3861002D77E5 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BCCA412A9D3861002D77E5 /* WorkoutManager.swift */; };
+		C9CF684F2AA5B73D0040770C /* WorkoutManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CF684E2AA5B73D0040770C /* WorkoutManagerTests.swift */; };
+		C9F1D8052AB1E113005FF764 /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F1D8042AB1E113005FF764 /* TimeManager.swift */; };
+		D713ACB52A9DE52E008BF7BC /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713ACB42A9DE52E008BF7BC /* ControlsView.swift */; };
+		D713ACB72A9DE543008BF7BC /* MetricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713ACB62A9DE543008BF7BC /* MetricsView.swift */; };
+		D713ACB92A9DE556008BF7BC /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713ACB82A9DE556008BF7BC /* StepsView.swift */; };
+		D713ACBC2A9E0C8E008BF7BC /* ActivityResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713ACBB2A9E0C8E008BF7BC /* ActivityResultView.swift */; };
+		D74E92A62A9F8A79003F502A /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74E92A52A9F8A79003F502A /* ResultViewModel.swift */; };
+		EEA170B20D9545B8A5BB9683 /* libPods-OutrackWatchAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 457237A18657A27EAE09D1E8 /* libPods-OutrackWatchAppTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C95A3E022AA5B9DD00BB01DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C91DCECC2A289CE10077FC02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C91DCED72A289CE10077FC02;
+			remoteInfo = OutrackWatchApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18A0143045A5CDD9379806F3 /* Pods-OutrackWatchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutrackWatchApp.release.xcconfig"; path = "Target Support Files/Pods-OutrackWatchApp/Pods-OutrackWatchApp.release.xcconfig"; sourceTree = "<group>"; };
+		457237A18657A27EAE09D1E8 /* libPods-OutrackWatchAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OutrackWatchAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4580BA788375B647C78AB2 /* Pods-OutrackWatchAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutrackWatchAppTests.release.xcconfig"; path = "Target Support Files/Pods-OutrackWatchAppTests/Pods-OutrackWatchAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A8064139AE67E5CC7FAED19 /* Pods-OutrackWatchAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutrackWatchAppTests.debug.xcconfig"; path = "Target Support Files/Pods-OutrackWatchAppTests/Pods-OutrackWatchAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0F6487FC47A420FBE03FF21 /* Pods-OutrackWatchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutrackWatchApp.debug.xcconfig"; path = "Target Support Files/Pods-OutrackWatchApp/Pods-OutrackWatchApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C90591742AA870E300AB9827 /* FallingAPICaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingAPICaller.swift; sourceTree = "<group>"; };
+		C90591752AA870E300AB9827 /* SucceedingAPICaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SucceedingAPICaller.swift; sourceTree = "<group>"; };
+		C90591762AA870E300AB9827 /* FakeURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeURLSession.swift; sourceTree = "<group>"; };
+		C90591772AA870E300AB9827 /* APICallerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICallerTests.swift; sourceTree = "<group>"; };
+		C91DCED82A289CE10077FC02 /* OutrackWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutrackWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91DCEF02A289E8D0077FC02 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.4.sdk/System/Library/Frameworks/CoreBluetooth.framework; sourceTree = DEVELOPER_DIR; };
+		C92B81052AA4B83600059C24 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		C93195042AAB537200FB2F2C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		C931DD052A311BE400D08384 /* SportListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportListView.swift; sourceTree = "<group>"; };
+		C931DD062A311BE400D08384 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C931DD0A2A311BE400D08384 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C931DD0B2A311BE400D08384 /* OutrackApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutrackApp.swift; sourceTree = "<group>"; };
+		C94ECBDB2AA784FA001D4B11 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C94ECBDD2AA78500001D4B11 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C94ECC132AA78B3F001D4B11 /* HTTPGetTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPGetTask.swift; sourceTree = "<group>"; };
+		C94ECC142AA78B3F001D4B11 /* HTTPPostTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPPostTask.swift; sourceTree = "<group>"; };
+		C94ECC152AA78B3F001D4B11 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		C94ECC172AA78B3F001D4B11 /* APICallerErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICallerErrors.swift; sourceTree = "<group>"; };
+		C94ECC182AA78B3F001D4B11 /* HTTPMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
+		C94ECC192AA78B3F001D4B11 /* States.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
+		C94ECC1A2AA78B3F001D4B11 /* RESTErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTErrors.swift; sourceTree = "<group>"; };
+		C94ECC1C2AA78B3F001D4B11 /* ServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		C94ECC1D2AA78B3F001D4B11 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		C94ECC1E2AA78B3F001D4B11 /* HTTPProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPProtocol.swift; sourceTree = "<group>"; };
+		C94ECC202AA78B3F001D4B11 /* APICaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		C94ECC212AA78B3F001D4B11 /* RequestGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestGenerator.swift; sourceTree = "<group>"; };
+		C94ECC332AA78C55001D4B11 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		C94ECC362AA78E74001D4B11 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		C956DCF92AA4AD7E0089DEEE /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C956DCFE2AA4B0F00089DEEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C9578C7C2AB04693001EAB8C /* TrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
+		C9578C7F2AB047F6001EAB8C /* TrainingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewModel.swift; sourceTree = "<group>"; };
+		C9578C812AB04DAB001EAB8C /* GETTrainingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GETTrainingsService.swift; sourceTree = "<group>"; };
+		C9578C842AB04EE0001EAB8C /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
+		C963748D2AA1F815005895E6 /* HKStatistics+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKStatistics+Extension.swift"; sourceTree = "<group>"; };
+		C963748F2AA216DE005895E6 /* TimeInterval+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extension.swift"; sourceTree = "<group>"; };
+		C96568822AAA5ACD004B3E36 /* POSTActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POSTActivityService.swift; sourceTree = "<group>"; };
+		C96568842AAA64F1004B3E36 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		C968ECB72AA9B581007E9EDE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C968ECBA2AA9B5B2007E9EDE /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		C9BCCA3C2A9D37CD002D77E5 /* HKWorkoutActivityType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKWorkoutActivityType+Extension.swift"; sourceTree = "<group>"; };
+		C9BCCA3E2A9D3801002D77E5 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		C9BCCA412A9D3861002D77E5 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		C9CF68452AA5B6980040770C /* OutrackWatchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OutrackWatchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9CF684E2AA5B73D0040770C /* WorkoutManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManagerTests.swift; sourceTree = "<group>"; };
+		C9F1D8042AB1E113005FF764 /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
+		D22B8CABF80233003A499110 /* libPods-OutrackWatchApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OutrackWatchApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D713ACB42A9DE52E008BF7BC /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		D713ACB62A9DE543008BF7BC /* MetricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsView.swift; sourceTree = "<group>"; };
+		D713ACB82A9DE556008BF7BC /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
+		D713ACBA2A9DEAD2008BF7BC /* OutrackWatchApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OutrackWatchApp.entitlements; sourceTree = "<group>"; };
+		D713ACBB2A9E0C8E008BF7BC /* ActivityResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityResultView.swift; sourceTree = "<group>"; };
+		D74E92A52A9F8A79003F502A /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C91DCED52A289CE10077FC02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7D991767419733FAEC0CD4 /* libPods-OutrackWatchApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9CF68422AA5B6980040770C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEA170B20D9545B8A5BB9683 /* libPods-OutrackWatchAppTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C03D9E2CD8DCED1FA31A760 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0F6487FC47A420FBE03FF21 /* Pods-OutrackWatchApp.debug.xcconfig */,
+				18A0143045A5CDD9379806F3 /* Pods-OutrackWatchApp.release.xcconfig */,
+				8A8064139AE67E5CC7FAED19 /* Pods-OutrackWatchAppTests.debug.xcconfig */,
+				5F4580BA788375B647C78AB2 /* Pods-OutrackWatchAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C90591712AA870BC00AB9827 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C90591732AA870E300AB9827 /* APICaller */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C90591732AA870E300AB9827 /* APICaller */ = {
+			isa = PBXGroup;
+			children = (
+				C90591772AA870E300AB9827 /* APICallerTests.swift */,
+				C90591742AA870E300AB9827 /* FallingAPICaller.swift */,
+				C90591752AA870E300AB9827 /* SucceedingAPICaller.swift */,
+				C90591762AA870E300AB9827 /* FakeURLSession.swift */,
+			);
+			path = APICaller;
+			sourceTree = "<group>";
+		};
+		C91DCECB2A289CE10077FC02 = {
+			isa = PBXGroup;
+			children = (
+				C931DD022A311BE400D08384 /* OutrackWatchApp */,
+				C9CF68462AA5B6980040770C /* OutrackWatchAppTests */,
+				C91DCED32A289CE10077FC02 /* Products */,
+				C91DCEEF2A289E8D0077FC02 /* Frameworks */,
+				1C03D9E2CD8DCED1FA31A760 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C91DCED32A289CE10077FC02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C91DCED82A289CE10077FC02 /* OutrackWatchApp.app */,
+				C9CF68452AA5B6980040770C /* OutrackWatchAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C91DCEEF2A289E8D0077FC02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C91DCEF02A289E8D0077FC02 /* CoreBluetooth.framework */,
+				D22B8CABF80233003A499110 /* libPods-OutrackWatchApp.a */,
+				457237A18657A27EAE09D1E8 /* libPods-OutrackWatchAppTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C931DD022A311BE400D08384 /* OutrackWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				D713ACBA2A9DEAD2008BF7BC /* OutrackWatchApp.entitlements */,
+				C9578C832AB04ED5001EAB8C /* Models */,
+				C94ECC112AA78B3F001D4B11 /* API */,
+				C94ECC322AA78C36001D4B11 /* Services */,
+				C931DD072A311BE400D08384 /* Utils */,
+				C931DD032A311BE400D08384 /* UI */,
+				C931DD092A311BE400D08384 /* Preview Content */,
+				C931DD0B2A311BE400D08384 /* OutrackApp.swift */,
+				C931DD062A311BE400D08384 /* Assets.xcassets */,
+				C92B81052AA4B83600059C24 /* R.generated.swift */,
+				C956DCF82AA4AD650089DEEE /* Localizable.strings */,
+			);
+			path = OutrackWatchApp;
+			sourceTree = "<group>";
+		};
+		C931DD032A311BE400D08384 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C9578C7E2AB047E4001EAB8C /* Training */,
+				C94ECBDA2AA784EF001D4B11 /* Login */,
+				D74E92A42A9F8A67003F502A /* Result */,
+				D713ACB22A9DE4F5008BF7BC /* Dashboard */,
+				C931DD052A311BE400D08384 /* SportListView.swift */,
+				C968ECBA2AA9B5B2007E9EDE /* AccountView.swift */,
+				C9BCCA3E2A9D3801002D77E5 /* ActivityView.swift */,
+				C968ECB72AA9B581007E9EDE /* MainView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C931DD072A311BE400D08384 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C94ECC352AA78E5F001D4B11 /* Constants */,
+				C9BCCA402A9D3856002D77E5 /* Managers */,
+				C931DD082A311BE400D08384 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C931DD082A311BE400D08384 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C9BCCA3C2A9D37CD002D77E5 /* HKWorkoutActivityType+Extension.swift */,
+				C963748D2AA1F815005895E6 /* HKStatistics+Extension.swift */,
+				C963748F2AA216DE005895E6 /* TimeInterval+Extension.swift */,
+				C96568842AAA64F1004B3E36 /* UserDefaults+Extension.swift */,
+				C93195042AAB537200FB2F2C /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C931DD092A311BE400D08384 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C931DD0A2A311BE400D08384 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C94ECBDA2AA784EF001D4B11 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C94ECBDB2AA784FA001D4B11 /* LoginView.swift */,
+				C94ECBDD2AA78500001D4B11 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C94ECC112AA78B3F001D4B11 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C94ECC122AA78B3F001D4B11 /* Tasks */,
+				C94ECC152AA78B3F001D4B11 /* HTTPTask.swift */,
+				C94ECC162AA78B3F001D4B11 /* Enums */,
+				C94ECC1B2AA78B3F001D4B11 /* Protocols */,
+				C94ECC1F2AA78B3F001D4B11 /* Services */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C94ECC122AA78B3F001D4B11 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				C94ECC132AA78B3F001D4B11 /* HTTPGetTask.swift */,
+				C94ECC142AA78B3F001D4B11 /* HTTPPostTask.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		C94ECC162AA78B3F001D4B11 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				C94ECC172AA78B3F001D4B11 /* APICallerErrors.swift */,
+				C94ECC182AA78B3F001D4B11 /* HTTPMethods.swift */,
+				C94ECC192AA78B3F001D4B11 /* States.swift */,
+				C94ECC1A2AA78B3F001D4B11 /* RESTErrors.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		C94ECC1B2AA78B3F001D4B11 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C94ECC1C2AA78B3F001D4B11 /* ServiceProtocol.swift */,
+				C94ECC1D2AA78B3F001D4B11 /* URLSessionProtocol.swift */,
+				C94ECC1E2AA78B3F001D4B11 /* HTTPProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C94ECC1F2AA78B3F001D4B11 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C94ECC202AA78B3F001D4B11 /* APICaller.swift */,
+				C94ECC212AA78B3F001D4B11 /* RequestGenerator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C94ECC322AA78C36001D4B11 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C94ECC332AA78C55001D4B11 /* LoginService.swift */,
+				C96568822AAA5ACD004B3E36 /* POSTActivityService.swift */,
+				C9578C812AB04DAB001EAB8C /* GETTrainingsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C94ECC352AA78E5F001D4B11 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C94ECC362AA78E74001D4B11 /* NetworkConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		C9578C7E2AB047E4001EAB8C /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				C9578C7C2AB04693001EAB8C /* TrainingView.swift */,
+				C9578C7F2AB047F6001EAB8C /* TrainingViewModel.swift */,
+			);
+			path = Training;
+			sourceTree = "<group>";
+		};
+		C9578C832AB04ED5001EAB8C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9578C842AB04EE0001EAB8C /* Training.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C95979E82AA5EABC001A6D7B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C9CF684E2AA5B73D0040770C /* WorkoutManagerTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C9BCCA402A9D3856002D77E5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C9BCCA412A9D3861002D77E5 /* WorkoutManager.swift */,
+				C9F1D8042AB1E113005FF764 /* TimeManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C9CF68462AA5B6980040770C /* OutrackWatchAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C90591712AA870BC00AB9827 /* API */,
+				C95979E82AA5EABC001A6D7B /* Utils */,
+			);
+			path = OutrackWatchAppTests;
+			sourceTree = "<group>";
+		};
+		D713ACB22A9DE4F5008BF7BC /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				D713ACB42A9DE52E008BF7BC /* ControlsView.swift */,
+				D713ACB62A9DE543008BF7BC /* MetricsView.swift */,
+				D713ACB82A9DE556008BF7BC /* StepsView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		D74E92A42A9F8A67003F502A /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				D713ACBB2A9E0C8E008BF7BC /* ActivityResultView.swift */,
+				D74E92A52A9F8A79003F502A /* ResultViewModel.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C91DCED72A289CE10077FC02 /* OutrackWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C91DCEE82A289CE20077FC02 /* Build configuration list for PBXNativeTarget "OutrackWatchApp" */;
+			buildPhases = (
+				711EBF3D1C09B74DF1B6B3FE /* [CP] Check Pods Manifest.lock */,
+				C956DCF32AA4ABB60089DEEE /* Run Script (RSwift) */,
+				C948B2512A3269A10050E49F /* Run Script (SwiftLint) */,
+				C91DCED42A289CE10077FC02 /* Sources */,
+				C91DCED52A289CE10077FC02 /* Frameworks */,
+				C91DCED62A289CE10077FC02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OutrackWatchApp;
+			productName = "Outrack Watch App";
+			productReference = C91DCED82A289CE10077FC02 /* OutrackWatchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9CF68442AA5B6980040770C /* OutrackWatchAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9CF684D2AA5B6980040770C /* Build configuration list for PBXNativeTarget "OutrackWatchAppTests" */;
+			buildPhases = (
+				CF3ABCBC086E8C41823893A3 /* [CP] Check Pods Manifest.lock */,
+				C9CF68412AA5B6980040770C /* Sources */,
+				C9CF68422AA5B6980040770C /* Frameworks */,
+				C9CF68432AA5B6980040770C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C95A3E032AA5B9DD00BB01DD /* PBXTargetDependency */,
+			);
+			name = OutrackWatchAppTests;
+			productName = OutrackWatchAppTests;
+			productReference = C9CF68452AA5B6980040770C /* OutrackWatchAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C91DCECC2A289CE10077FC02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					C91DCED72A289CE10077FC02 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					C9CF68442AA5B6980040770C = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = C91DCED72A289CE10077FC02;
+					};
+				};
+			};
+			buildConfigurationList = C91DCECF2A289CE10077FC02 /* Build configuration list for PBXProject "Outrack" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+			);
+			mainGroup = C91DCECB2A289CE10077FC02;
+			productRefGroup = C91DCED32A289CE10077FC02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C91DCED72A289CE10077FC02 /* OutrackWatchApp */,
+				C9CF68442AA5B6980040770C /* OutrackWatchAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C91DCED62A289CE10077FC02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C931DD0E2A311BE400D08384 /* Preview Assets.xcassets in Resources */,
+				C956DCF62AA4AD650089DEEE /* Localizable.strings in Resources */,
+				C931DD0D2A311BE400D08384 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9CF68432AA5B6980040770C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		711EBF3D1C09B74DF1B6B3FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OutrackWatchApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C948B2512A3269A10050E49F /* Run Script (SwiftLint) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (SwiftLint)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		C956DCF32AA4ABB60089DEEE /* Run Script (RSwift) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (RSwift)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		CF3ABCBC086E8C41823893A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OutrackWatchAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C91DCED42A289CE10077FC02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94ECC262AA78B3F001D4B11 /* HTTPMethods.swift in Sources */,
+				C94ECC282AA78B3F001D4B11 /* RESTErrors.swift in Sources */,
+				C9578C802AB047F6001EAB8C /* TrainingViewModel.swift in Sources */,
+				C94ECC342AA78C55001D4B11 /* LoginService.swift in Sources */,
+				C94ECC232AA78B3F001D4B11 /* HTTPPostTask.swift in Sources */,
+				C94ECC252AA78B3F001D4B11 /* APICallerErrors.swift in Sources */,
+				D713ACB92A9DE556008BF7BC /* StepsView.swift in Sources */,
+				C94ECC2B2AA78B3F001D4B11 /* HTTPProtocol.swift in Sources */,
+				C94ECC292AA78B3F001D4B11 /* ServiceProtocol.swift in Sources */,
+				C93195052AAB537200FB2F2C /* String+Extension.swift in Sources */,
+				C92B81062AA4B83600059C24 /* R.generated.swift in Sources */,
+				C963748E2AA1F815005895E6 /* HKStatistics+Extension.swift in Sources */,
+				D713ACB52A9DE52E008BF7BC /* ControlsView.swift in Sources */,
+				C9578C852AB04EE0001EAB8C /* Training.swift in Sources */,
+				C9578C7D2AB04693001EAB8C /* TrainingView.swift in Sources */,
+				C931DD0C2A311BE400D08384 /* SportListView.swift in Sources */,
+				C9BCCA3F2A9D3801002D77E5 /* ActivityView.swift in Sources */,
+				C968ECB82AA9B581007E9EDE /* MainView.swift in Sources */,
+				C96568832AAA5ACD004B3E36 /* POSTActivityService.swift in Sources */,
+				C94ECC272AA78B3F001D4B11 /* States.swift in Sources */,
+				C9F1D8052AB1E113005FF764 /* TimeManager.swift in Sources */,
+				C94ECC2A2AA78B3F001D4B11 /* URLSessionProtocol.swift in Sources */,
+				C9BCCA3D2A9D37CD002D77E5 /* HKWorkoutActivityType+Extension.swift in Sources */,
+				C94ECC2C2AA78B3F001D4B11 /* APICaller.swift in Sources */,
+				C931DD0F2A311BE400D08384 /* OutrackApp.swift in Sources */,
+				C94ECBDE2AA78500001D4B11 /* LoginViewModel.swift in Sources */,
+				C94ECBDC2AA784FA001D4B11 /* LoginView.swift in Sources */,
+				D713ACB72A9DE543008BF7BC /* MetricsView.swift in Sources */,
+				C94ECC242AA78B3F001D4B11 /* HTTPTask.swift in Sources */,
+				D74E92A62A9F8A79003F502A /* ResultViewModel.swift in Sources */,
+				C96568852AAA64F1004B3E36 /* UserDefaults+Extension.swift in Sources */,
+				C9BCCA422A9D3861002D77E5 /* WorkoutManager.swift in Sources */,
+				D713ACBC2A9E0C8E008BF7BC /* ActivityResultView.swift in Sources */,
+				C9578C822AB04DAB001EAB8C /* GETTrainingsService.swift in Sources */,
+				C94ECC2D2AA78B3F001D4B11 /* RequestGenerator.swift in Sources */,
+				C96374902AA216DE005895E6 /* TimeInterval+Extension.swift in Sources */,
+				C94ECC372AA78E74001D4B11 /* NetworkConstants.swift in Sources */,
+				C968ECBB2AA9B5B2007E9EDE /* AccountView.swift in Sources */,
+				C94ECC222AA78B3F001D4B11 /* HTTPGetTask.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9CF68412AA5B6980040770C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CF684F2AA5B73D0040770C /* WorkoutManagerTests.swift in Sources */,
+				C905917A2AA870E300AB9827 /* FakeURLSession.swift in Sources */,
+				C90591792AA870E300AB9827 /* SucceedingAPICaller.swift in Sources */,
+				C905917B2AA870E300AB9827 /* APICallerTests.swift in Sources */,
+				C90591782AA870E300AB9827 /* FallingAPICaller.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C95A3E032AA5B9DD00BB01DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C91DCED72A289CE10077FC02 /* OutrackWatchApp */;
+			targetProxy = C95A3E022AA5B9DD00BB01DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C956DCF82AA4AD650089DEEE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C956DCF92AA4AD7E0089DEEE /* fr */,
+				C956DCFE2AA4B0F00089DEEE /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C91DCEE62A289CE20077FC02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C91DCEE72A289CE20077FC02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C91DCEE92A289CE20077FC02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0F6487FC47A420FBE03FF21 /* Pods-OutrackWatchApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OutrackWatchApp/OutrackWatchApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OutrackWatchApp/Preview Content\"";
+				DEVELOPMENT_TEAM = L92342TF3R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Outrack-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Outrack;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Outrack needs access to your health data in order to function.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Outrack needs access to your health data in order to function.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.outrack.outrackwatchos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		C91DCEEA2A289CE20077FC02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18A0143045A5CDD9379806F3 /* Pods-OutrackWatchApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OutrackWatchApp/OutrackWatchApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OutrackWatchApp/Preview Content\"";
+				DEVELOPMENT_TEAM = L92342TF3R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Outrack-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Outrack;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Outrack needs access to your health data in order to function.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Outrack needs access to your health data in order to function.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.outrack.outrackwatchos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		C9CF684B2AA5B6980040770C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A8064139AE67E5CC7FAED19 /* Pods-OutrackWatchAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L92342TF3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.valmnt.OutrackWatchAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OutrackWatchApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OutrackWatchApp";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		C9CF684C2AA5B6980040770C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F4580BA788375B647C78AB2 /* Pods-OutrackWatchAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L92342TF3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.valmnt.OutrackWatchAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OutrackWatchApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OutrackWatchApp";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C91DCECF2A289CE10077FC02 /* Build configuration list for PBXProject "Outrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91DCEE62A289CE20077FC02 /* Debug */,
+				C91DCEE72A289CE20077FC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C91DCEE82A289CE20077FC02 /* Build configuration list for PBXNativeTarget "OutrackWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91DCEE92A289CE20077FC02 /* Debug */,
+				C91DCEEA2A289CE20077FC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9CF684D2AA5B6980040770C /* Build configuration list for PBXNativeTarget "OutrackWatchAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9CF684B2AA5B6980040770C /* Debug */,
+				C9CF684C2AA5B6980040770C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C91DCECC2A289CE10077FC02 /* Project object */;
+}
